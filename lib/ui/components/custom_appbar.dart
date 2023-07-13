@@ -8,22 +8,25 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 10),
+      padding: const EdgeInsets.only(top: 50, bottom: 10),
       color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          SizedBox(),
+          const SizedBox(),
           Row(children: [
             Image.asset(
               ImageConstants.iconImage,
               width: 50,
             ),
+            const SizedBox(
+              width: 10,
+            ),
             Text(
               "Buchi",
               style: TextStyle(
                   color: AppTheme.secondaryColor,
-                  fontSize: 40,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold),
             )
           ]),

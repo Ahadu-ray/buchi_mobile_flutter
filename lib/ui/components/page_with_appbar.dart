@@ -15,7 +15,7 @@ class _PagWwithAppBarState extends State<PageWithAppBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.primaryColor,
+      backgroundColor: AppTheme.backgroundColor,
       body: Column(children: [CustomAppBar(), widget.child]),
     );
   }
