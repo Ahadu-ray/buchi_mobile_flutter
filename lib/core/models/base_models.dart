@@ -1,3 +1,6 @@
+// This file contains models that are used in the app
+// The main apps will use freezed to generate the models, making them immutable
+// This is just a sample to show how to use models
 class SelectablePetModel {
   String name;
   bool isSelected;
